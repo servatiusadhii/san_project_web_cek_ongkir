@@ -1,3 +1,13 @@
+# How to Use This Repo :
+1. Download or Fork This Repo
+2. Register your account at rajaongkir.com
+3. Copy Your API To the project file
+4. Install Library from Kavist/RajaOngkir
+5. Composer Install
+6. Composer require kavist/rajaongkir:^1.1
+7. php artisan migrate --seed or using provided db file
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">

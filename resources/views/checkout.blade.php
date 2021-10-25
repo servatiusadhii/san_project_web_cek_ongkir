@@ -21,6 +21,7 @@
     <section class="content">
         <div class="row">
               <div class="col-12">
+                
                 <div class="box">
                   <div class="box-grey" style="background-color: #f3f3f3;
                   -webkit-border-radius: 10px;
@@ -30,23 +31,44 @@
                   margin: 40px 0px;
               }">
                     <table width="100%" border="0">
-                        <tbody><tr>
-                            <td width="100"><strong>Dari </strong></td>
-                            <td><strong>:</strong> {{ $origin }}</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Tujuan  </strong></td>
-                            <td><strong>:</strong> {{ $destination }}</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Ekspedisi  </strong></td>
+                        <tbody>
+                          <tr>
+                            <td width="100"><strong>Shipper </strong></td>
+                            <td><strong>:</strong> {{ $name }}</td>
+
+                            <td width="50"><strong>Consignee </strong></td>
+                            <td><strong>:</strong> {{ $rname }}</td>
+
+                            <td width="50"><strong>Ekpedisi </strong></td>
                             <td style="text-transform: uppercase"><strong>:</strong> {{ $courier}}</td>
-                        </tr>
-                        <tr>
+                          </tr>
                           
-                            <td><strong>Berat (Kg)  </strong></td>
+                          <tr >
+                            <td width="130"><strong>Provinsi<br>Pengiriman </strong></td>
+                            <td><strong>:</strong> {{ $provinsi }} </strong></td>
+
+                            <td width="130"><strong>Provinsi<br>Tujuan </strong></td>
+                            <td><strong>:</strong> {{ $provinsi }} </strong></td>
+
+                            <td width="100"><strong>Berat (Kg)</strong></td>
                             <td><strong>:</strong> {{ $weight }}</td>
                         </tr>
+
+                        <tr>
+                            <td width="130"><strong>Kota<br>Pengiriman </strong></td>
+                            <td><strong>:</strong> {{ $origin }} </strong></td>
+
+                            <td width="130"><strong>Kota<br>Tujuan </strong></td>
+                            <td><strong>:</strong> {{ $origin }} </strong></td>
+
+                            <td width="130"><strong>Checked At</strong></td>
+                            <td><strong>:</strong> <?=date('l, d-m-Y ')?><br>
+                            <?php date_default_timezone_set('Asia/Jakarta'); 
+                            echo '&nbsp;'.date('h:i:s A') ?></td>
+                            
+                        </tr>
+                        
+                        
                     </tbody></table>
                 </div>
                   <div class="box-body">
@@ -79,6 +101,10 @@
             </div>
             <!-- /.row -->
       </section>
+
+      <br>
+        <div class="card-header text-center rounded-top">All <span style="color: orangered;">Data Provided </span> By <span style="color: green">&copy; RajaOngkir.com &copy;</span> Starter Pack</div>
+      
 
     </div>
       <!-- Optional JavaScript -->

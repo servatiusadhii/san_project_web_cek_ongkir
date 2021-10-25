@@ -14,11 +14,11 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
-Route::get('/form', [PageController::class, 'index']);
+Route::get('/', [PageController::class, 'index']);
 Route::get('/province/{id}/cities', [PageController::class, 'getCities']);
-Route::post('/submit',[PageController::class, 'submit']);
+Route::post('/',[PageController::class, 'submit']);

@@ -30,7 +30,7 @@ class PageController extends Controller
         [
             'body'=>'origin='.$request->origin.'&destination='.$request->destination.'&weight='.($request->weight * 1000).'&courier='.$request->courier,
             'headers'=>[
-                'key'=>'7087b0ad65caf8acc15ab3ef5703868f',
+                'key'=>'RAJAONGKIR_API',
                 'content-type' => 'application/x-www-form-urlencoded',
             ]
         ]

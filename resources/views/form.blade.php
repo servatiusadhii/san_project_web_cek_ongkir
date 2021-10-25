@@ -19,7 +19,7 @@
                 <div class="card">
                     <div class="card-header text-center">Tarif Terbaru Ekpedisi per <b style="color: red"><?=date('d/M/Y')?></b>
                     <div class="card-body">
-                        <form action="{{ url('/submit') }}" class="form-horizontal" method="post">
+                        <form action="{{ url('/') }}" class="form-horizontal" method="post">
                             @csrf
                         <div class="form-group-sm">
                             <div class="row">
